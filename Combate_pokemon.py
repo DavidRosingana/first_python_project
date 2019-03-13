@@ -25,7 +25,7 @@ else:
 while vida_pikachu > 0 and vida_enemigo > 0:
     ataque_pikachu = input("Que ataque quieres elegir:\n(Pikachu puede usar chispazo y bola voltio) ").capitalize()
     if ataque_pikachu == "Chispazo":
-        dano_pikachu = 8
+        dano_pikachu = 10
         print("Pikachu usó:", ataque_pikachu)
         vida_enemigo -= dano_pikachu
 
@@ -33,6 +33,13 @@ while vida_pikachu > 0 and vida_enemigo > 0:
         dano_pikachu = 12
         print("Pikachu usó:", ataque_pikachu)
         vida_enemigo -= dano_pikachu
+
+    else:
+        dano_pikachu = 8
+        print("Pikachu usó: combate")
+        vida_enemigo -= dano_pikachu
+        print("Pikachu se hirió a si mismo")
+        vida_pikachu -= 3
 
     print("Vida de {} = {} ".format(nombre_rival, vida_enemigo))
 
