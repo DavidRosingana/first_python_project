@@ -1,9 +1,13 @@
-mi_lista=["pan", "arroz", "tomate", "pizza", "cerveza", "patatas"]
+mi_lista=[]
 
-largo_lista = len(mi_lista)
-indice_actual = 0
+input_user = ""
 
-while indice_actual < largo_lista:
-    print("Tengo que comprar: {}".format(mi_lista[indice_actual]))
-    indice_actual += 1
+input_user = input("Qué quieres comprar?\n(escribe FIN para salir)\n ")
+
+while input_user != "FIN":
+    mi_lista.append(input_user)
+    input_user = input("Qué quieres comprar?\n(escribe FIN para salir)\n ")
+
+for item in mi_lista:
+    print("Mi lista para comprar es: {}".format(item))
 
