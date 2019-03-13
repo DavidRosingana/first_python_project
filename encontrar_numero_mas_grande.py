@@ -20,4 +20,4 @@ for item in lista:
     if item > numero_mayor:
         numero_mayor = item
 
-print(numero_mayor)
+print(numero_mayor  )
