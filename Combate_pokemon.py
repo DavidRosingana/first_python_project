@@ -17,10 +17,10 @@ elif rival_elegido == "Santi":
     nombre_rival = "Santi"
     dano_enemigo = 9
 else:
-    vida_enemigo = 1
-    nombre_rival = "Metapod"
-    dano_enemigo = 0
-    print("Has elegido al pokemon auxiliar Metapod")
+    vida_enemigo = 100000000000
+    nombre_rival = "Mewtwo"
+    dano_enemigo = 99
+    print("Por listo vas a combatir contra Mewtwo")
 
 while vida_pikachu > 0 and vida_enemigo > 0:
     ataque_pikachu = input("Que ataque quieres elegir:\n(Pikachu puede usar chispazo y bola voltio) ").capitalize()
