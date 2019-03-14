@@ -1,7 +1,13 @@
-print("Simulador de combates. En este combate controlaras a un Pikachu")
-print("Puedes combatir contra Casado, Rivera o Santi")
+print("Simulador de combates Pokemon por España.")
+elecc = input("Elige a tu Pokemon").capitalize()
+if elecc == "Pikachu":
+    print("Has elegido a Pikachu")
+else:
+    print("No tenemos a ese Pokemon, se te asignará un Pikachu")
 
-rival_elegido = input("Contra quien quieres combatir:").capitalize()
+print("Puedes combatir contra Casado, Rivera o Santiago")
+
+rival_elegido = input("Contra quién quieres combatir?").capitalize()
 vida_pikachu = 100
 
 if rival_elegido == "Casado":
@@ -20,10 +26,10 @@ else:
     vida_enemigo = 100000000000
     nombre_rival = "Mewtwo"
     dano_enemigo = 99
-    print("Por listo vas a combatir contra Mewtwo")
+    print("Hala, por listo vas a combatir contra Mewtwo")
 
 while vida_pikachu > 0 and vida_enemigo > 0:
-    ataque_pikachu = input("Que ataque quieres elegir:\n(Pikachu puede usar chispazo y bola voltio) ").capitalize()
+    ataque_pikachu = input("Que ataque quieres elegir:\n(Pikachu puede usar Chispazo y Bola voltio) ").capitalize()
     if ataque_pikachu == "Chispazo":
         dano_pikachu = 10
         print("Pikachu usó:", ataque_pikachu)
