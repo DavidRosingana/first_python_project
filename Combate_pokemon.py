@@ -18,15 +18,15 @@ elif rival_elegido == "Rivera":
     vida_enemigo = 100
     nombre_rival = "Rivera"
     dano_enemigo = 8
-elif rival_elegido == "Santi":
+elif rival_elegido == "Santiago":
     vida_enemigo = 100
-    nombre_rival = "Santi"
+    nombre_rival = "Santiago"
     dano_enemigo = 9
 else:
     vida_enemigo = 100000000000
-    nombre_rival = "Mewtwo"
+    nombre_rival = "Trump"
     dano_enemigo = 99
-    print("Hala, por listo vas a combatir contra Mewtwo")
+    print("Hala, por listo vas a combatir contra Trump")
 
 while vida_pikachu > 0 and vida_enemigo > 0:
     ataque_pikachu = input("Que ataque quieres elegir:\n(Pikachu puede usar Chispazo y Bola voltio) ").capitalize()
