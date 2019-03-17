@@ -20,7 +20,7 @@ elif rival_elegido == "Rivera":
     vida_enemigo = 100
     nombre_rival = "Rivera"
     dano_enemigo = 8
-    nombre_ataque = "Neoliberalismo"
+    nombre_ataque = "Feminismo liberal"
 
 elif rival_elegido == "Santiago":
     vida_enemigo = 100
@@ -33,7 +33,7 @@ else:
     nombre_rival = "Trump"
     dano_enemigo = 99
     nombre_ataque = "DESTRUCCIÓN INFINITA"
-    print("Hala, por listo vas a combatir contra Trump")
+    print("Hala, por listo vas a combatir contra {}".format(nombre_rival))
 
 while vida_pikachu > 0 and vida_enemigo > 0:
     ataque_pikachu = input("Que ataque quieres elegir:\n(Pikachu puede usar Chispazo y Bola voltio) ").capitalize()
