@@ -41,7 +41,20 @@ def add_contact(contacts):
     sleep(2)
 
 def remove_contact(contacts):
-    pass
+    print("Eliminar contacto: ")
+    search_term = input("Indique contacto ")
+    found_contacts = []
+
+    print("Contacto a eliminar: ")
+    contact_indexes = []
+    contact_counter = 0
+
+    for contact in contacts:
+        if contact["name"].find(search_term) >= 0:
+            found_contacts.append(contact)
+            print("{}  -  {}".format(contact_counter, contact["name"]))
+            contact_indexes.append(contact_counter)
+            contact_counter -= 1
 
 
 def find_contact(contacts):
@@ -75,7 +88,6 @@ def find_contact(contacts):
 
 def export_contact():
     pass
-
 
 def load_contacts():
     try:
