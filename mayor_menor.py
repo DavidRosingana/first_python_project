@@ -1,3 +1,3 @@
-<=
->=
+<= menor que
+>= mayor que
 
